@@ -1,0 +1,156 @@
+Sure! Here's a simple and responsive HTML and CSS template for a marketing website homepage. It includes:
+- A hero section with a banner image
+- A services section with zoomable photos
+- A contact form
+- Basic styling and hover effects
+
+🧩 HTML (index.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketing Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Grow Your Brand</h1>
+    <p>Creative marketing solutions for modern businesses</p>
+  </header>
+
+  <section class="hero">
+    <img src="https://via.placeholder.com/1200x400?text=Marketing+Banner" alt="Marketing Banner" />
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="gallery">
+      <div class="photo">
+        <img src="https://via.placeholder.com/300x200?text=SEO" alt="SEO Services" />
+        <p>SEO Optimization</p>
+      </div>
+      <div class="photo">
+        <img src="https://via.placeholder.com/300x200?text=Social+Media" alt="Social Media Marketing" />
+        <p>Social Media Marketing</p>
+      </div>
+      <div class="photo">
+        <img src="https://via.placeholder.com/300x200?text=Branding" alt="Branding" />
+        <p>Brand Strategy</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Marketing Co. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
+
+
+🎨 CSS (styles.css)
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.services {
+  padding: 2rem;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.photo {
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover img {
+  transform: scale(1.1);
+}
+
+.contact {
+  background: #eee;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact button {
+  padding: 0.75rem;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #005fa3;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+
+Would you like me to help you add animations, a navigation bar, or make it mobile-friendly with media queries?
